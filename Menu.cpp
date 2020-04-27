@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include "PbTSP.hpp"
-#include "PbTritopologique.hpp"
+#include "PbTriTopologique.hpp"
 using namespace std;
 int main(int argc, char* argv[]) {
 

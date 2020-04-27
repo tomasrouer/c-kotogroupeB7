@@ -7,7 +7,7 @@
  * \author GroupeB7
  * \version 0.1
  */
-#include "grapheOriente.hpp"
+#include "GrapheOriente.hpp"
 
     /*! \class PbTritopologique
      * \brief classe representant un probleme a pour but de 

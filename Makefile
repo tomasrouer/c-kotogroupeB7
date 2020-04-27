@@ -1,5 +1,5 @@
-main: Menu.o Arc.o Graphe.o GrapheNonOriente.o GrapheOriente.o PbTritopologique.o PbTSP.o Sommet.o                       
-	g++ Menu.o Arc.o Graphe.o GrapheNonOriente.o GrapheOriente.o PbTritopologique.o PbTSP.o Sommet.o -o main       
+main: Menu.o Arc.o Graphe.o GrapheNonOriente.o GrapheOriente.o PbTriTopologique.o PbTSP.o Sommet.o                       
+	g++ Menu.o Arc.o Graphe.o GrapheNonOriente.o GrapheOriente.o PbTriTopologique.o PbTSP.o Sommet.o -o main       
 
 Sommet.o: Sommet.cpp Sommet.hpp
 	g++ -c Sommet.cpp
@@ -16,13 +16,13 @@ GrapheOriente.o: GrapheOriente.cpp Arc.hpp Sommet.hpp Graphe.hpp GrapheOriente.h
 GrapheNonOriente.o: GrapheNonOriente.cpp Arc.hpp Sommet.hpp Graphe.hpp GrapheNonOriente.hpp
 	g++ -c  GrapheNonOriente.cpp
 
-PbTritopologique.o : PbTritopologique.cpp Arc.hpp Sommet.hpp Graphe.hpp GrapheOriente.hpp PbTritopologique.hpp
-	g++ -c PbTritopologique.cpp
+PbTriTopologique.o : PbTriTopologique.cpp Arc.hpp Sommet.hpp Graphe.hpp GrapheOriente.hpp PbTriTopologique.hpp
+	g++ -c PbTriTopologique.cpp
 
 PbTSP.o: PbTSP.cpp Arc.hpp Sommet.hpp Graphe.hpp GrapheNonOriente.hpp PbTSP.hpp
 	g++ -c PbTSP.cpp
 
-Menu.o: Menu.cpp Arc.hpp Sommet.hpp Graphe.hpp GrapheOriente.hpp PbTritopologique.hpp GrapheNonOriente.hpp PbTSP.hpp Menu.hpp
+Menu.o: Menu.cpp Arc.hpp Sommet.hpp Graphe.hpp GrapheOriente.hpp PbTriTopologique.hpp GrapheNonOriente.hpp PbTSP.hpp Menu.hpp
 	g++ -c Menu.cpp
 
 clean:
