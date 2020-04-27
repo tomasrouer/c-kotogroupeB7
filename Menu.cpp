@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 #include "PbTSP.hpp"
 #include "PbTriTopologique.hpp"
 using namespace std;
