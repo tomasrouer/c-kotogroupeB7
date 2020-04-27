@@ -18,9 +18,9 @@
     {
     public:
         GrapheNonOriente* gr; /*!< Ensemble de villes et de distances, l'entree du probleme*/
+        int resultat; /*!< la longueur minimale du chemin, la sortie du probleme*/
     private:
         int villeDepart;  /*!< le depart et la destination*/
-        int resultat; /*!< la longueur minimale du chemin, la sortie du probleme*/
         int longueur[maxNb];/*!< stocker les longueurs des chemins*/
         bool visite[maxV];/*!< marquer si la ville est visite*/
         int nbVisite;/*!< nbr de villes deja visites*/

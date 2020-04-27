@@ -5,10 +5,11 @@ using namespace std;
 
 Sommet::Sommet() {
 	valeur = rand();
+	visite = false;
 	presentation = "NOM";
 }
 Sommet::Sommet(std::string nom) {
-	valeur = 0;
+	valeur = rand();
 	visite = false;
 	if (nom.size()>0) {
 		if (nom.size() == 1)

@@ -18,12 +18,12 @@ void Graphe::ajouterSommet(Sommet s) {
 void Graphe::supprimerSommet(int i) {
 	if (i > sommetS.size()) cout << "il n'existe pas ieme sommet" << endl;
 	else {
+		
 		std::vector<Arc>::iterator ita;
-			for (ita = arcS.begin();ita != arcS.end();ita++)
-				if (ita->getPremierSommet() == sommetS[i] || ita->getSecondSommet() == sommetS[i]) {
-					arcS.erase(ita);
-					if (arcS.empty())
-						break;
+		for (ita = arcS.begin();ita != arcS.end();) {
+			if (ita->getPremierSommet() == sommetS[i-1] || ita->getSecondSommet() == sommetS[i-1]) 
+				ita = arcS.erase(ita);
+			else ++ita;
 				}
 		sommetS.erase(sommetS.begin() + i - 1);
 	}
